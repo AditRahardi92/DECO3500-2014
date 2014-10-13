@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #26a7d1;
 }
 
 h1,
@@ -63,7 +63,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #26a7d1;
 }
 
 hr.star-primary {
@@ -82,10 +82,15 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #26a7d1;
 }
 
 header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header .container2 {
     padding-top: 100px;
     padding-bottom: 50px;
 }
@@ -112,6 +117,11 @@ header .intro-text .skills {
     header .container {
         padding-top: 200px;
         padding-bottom: 100px;
+    }
+	
+	header .container2 {
+        padding-top: 120px;
+        padding-bottom: 50px;
     }
 
     header .intro-text .name {
@@ -181,7 +191,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #26a7d1;
 }
 
 @media(max-width:767px) {
@@ -265,7 +275,7 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #26a7d1;
     background: #fff;
 }
 
@@ -318,7 +328,7 @@ section.success {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #26a7d1;
 }
 
 form .row:first-child .floating-label-form-group {
