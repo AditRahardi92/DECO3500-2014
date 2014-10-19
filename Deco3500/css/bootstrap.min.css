@@ -5434,11 +5434,6 @@ table-bordered>thead>tr>th, .table-bordered>thead>tr>th, table-bordered>tbody>tr
     box-shadow: none
 }
 
-/***ARROW SECTION OVERWRITE***/
-.arrow {
-	background-color: #fff;
-
-}
 
 /***MAP SECTION OVERWRITE***/
 .worldMap {
