@@ -5442,6 +5442,11 @@ table-bordered>thead>tr>th, .table-bordered>thead>tr>th, table-bordered>tbody>tr
     text-align: justify;
     font-size: 12pt;
 }
+
+.breakingNews {
+    color: blue;
+}
+
 /***ABOUT SECTION OVERWRITE***/
 
 .justify {
