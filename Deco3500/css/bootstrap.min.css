@@ -5433,44 +5433,34 @@ table-bordered>thead>tr>th, .table-bordered>thead>tr>th, table-bordered>tbody>tr
     -webkit-box-shadow: none;
     box-shadow: none
 }
-
-
 /***MAP SECTION OVERWRITE***/
+
 .worldMap {
-	margin: auto;
+    margin: auto;
 }
-
 .newsJustify {
-        text-align: justify;
-font-size: 12pt;
-
+    text-align: justify;
+    font-size: 12pt;
 }
-
 /***ABOUT SECTION OVERWRITE***/
+
 .justify {
-	text-align: justify;
+    text-align: justify;
 }
-
-.vertical-line-right-about{
+.vertical-line-right-about {
     border-right: medium solid #fff;
- }
-
- .vertical-line-left-about{
+}
+.vertical-line-left-about {
     border-left: medium solid #fff;
- }
+}
+/***CONTACT SECTION OVERWRITE***/
 
-
- /***CONTACT SECTION OVERWRITE***/
- .contact-grid {
- 	padding: 15px 15px 15px 15px;
- }
-
- .vertical-line-right {
- 	border-right: medium solid #2C3E50;
- }
-
- .vertical-line-left {
- 	border-left: medium solid #2C3E50;
- }
-
-
+.contact-grid {
+    padding: 15px 15px 15px 15px;
+}
+.vertical-line-right {
+    border-right: medium solid #2C3E50;
+}
+.vertical-line-left {
+    border-left: medium solid #2C3E50;
+}

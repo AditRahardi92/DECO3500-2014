@@ -81,10 +81,22 @@
     <!-- Map Section -->
     <section id="portfolio" style="height: 580px">
         <!-- jQuery Dialog -->
-        <div id="dialog" title="Breaking News">
-            <a href="http://www.reuters.com/article/2014/10/19/us-health-ebola-usa-idUSKCN0I61BO20141019">Read it at</a>
-            <p class="newsJustify">Map Link is a concept that allows readers to gain access to worldwide news in a graphical way. Our concept aims to improve the accessibility of news by using an interactive map which informs readers which location in the world is currently making the headlines. Based on our user research, we learned that not every person knows the location of the latest news. Thus, we decided to present news in a way, which we believe will improve user's geographical knowledge.
+        <div id="US" title="Latest News in the United States of America">
+            <h4>JFK Airport hiring Ebola screeners for just $22 an hour</h4>
+            <p class="newsJustify"><b>THEY’RE looking for the few, the proud — and the really desperate.</b>
+                </br>
+                </br>
+                For a measly $US19 ($21.70) an hour, a government contractor is offering applicants the opportunity to get up close and personal with potential Ebola patients at JFK Airport in New York — including taking their temperatures. Angel Staffing Inc. is hiring brave souls with basic EMT or paramedic training to assist Customs and Border Protection officers and the Centres for Disease Control and Prevention in identifying possible victims at Terminal 4, where amped-up Ebola screening started on Saturday. EMTs will earn just $US19 an hour, while paramedics will pocket $US29. Everyone must be registered with the National Registry of Emergency Medical Technicians in the US. The medical staffing agency is also selecting screeners to work at Washington Dulles, Newark Liberty, Chicago O’Hare and Hartsfield-Jackson Atlanta international airports. “Wow, that’s really scary ... Be safe everybody,” Facebook user Jaclyn Namer wrote under a posting for the job. Others were a little more eager to lend a hand....<a href="http://www.news.com.au/finance/work/jfk-airport-hiring-ebola-screeners-for-just-22-an-hour/story-fnkgbb6w-1227095536400">Continue reading at News.com.au</a>
             </p>
+
+        </div>
+
+        <div id="IQ" title="Latest News in the Iraq">
+            <h4>Al-Qaeda wants Muslims to join Islamic State</h4>
+            <p class="newsJustify"><b>TERROR group Al-Qaeda has called on Muslims worldwide to join Islamic State in their quest to create a caliphate as the militants continue to be beaten back in both Syria and Iraq.</b>
+                </br>
+                </br>
+                For the second day, Iraq and Kurd forces backed by Coalition air strikes and on-the- ground US and UK military advisers successfully fought battles on multiple fronts halting the militants’ momentum. In Tikrit, north of Baghdad Iraqi forces backed by their air force destroyed six ISIS armoured personnel carriers and an unknown number of militants while fierce battles also raged about Ramadi in the country’s north west where a curfew has now been imposed.The Iraqi force of military and police also moved two battalions into the Anbar province of which Ramadi is the capital. An intelligence tip off also led to forces uncovering an arsenal of weapons outside the Tikrit including dozens of home made Improvised Explosive Devices (IEDs) and mortars. Gains by Kurdish fighters were also made in the border town of Kobani thanks largely to another six air strikes yesterday pounding ISIS reinforcements that had been arriving in the area...<a href="http://www.news.com.au/world/middle-east/alqaeda-wants-muslims-to-join-islamic-state/story-fnh81ifq-1227094687177">Continue reading at News.com.au</a>
         </div>
 
         <!-- Vector Map -->
@@ -248,7 +260,7 @@
 
 
     <script>
-    $("#dialog").dialog({
+    $("#US").dialog({
         autoOpen: false,
         resizable: false,
         height: 400,
@@ -256,18 +268,22 @@
         modal: true
     });
 
+    $("#IQ").dialog({
+        autoOpen: false,
+        resizable: false,
+        height: 400,
+        width: 800,
+        modal: true
+    });
 
     $("#opener").click(function() {});
-
-    
     </script>
 
     <script type="text/javascript">
     function lightOn() {
         jQuery('#vmap').vectorMap('set', 'colors', {
             iq: '#FFE70D',
-            us: '#FFE70D',
-            pk: '#FFE70D'
+            us: '#FFE70D'
         });
     }
 
@@ -294,12 +310,11 @@
                 // }
                 switch (code) {
                     case "us":
-                        console.log("Clicked")
-                        $("#dialog").dialog('open');
+                        $("#US").dialog('open');
                         //window.location.href = "http://world.einnews.com/country/unitedstates"
                         break;
                     case "iq":
-                        window.location.href = "http://world.einnews.com/country/iraq"
+                        $("#IQ").dialog('open');
                         break;
                     default:
                         alert("Try somewhere else!")
