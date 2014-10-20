@@ -5440,10 +5440,24 @@ table-bordered>thead>tr>th, .table-bordered>thead>tr>th, table-bordered>tbody>tr
 	margin: auto;
 }
 
+.newsJustify {
+        text-align: justify;
+font-size: 12pt;
+
+}
+
 /***ABOUT SECTION OVERWRITE***/
 .justify {
 	text-align: justify;
 }
+
+.vertical-line-right-about{
+    border-right: medium solid #fff;
+ }
+
+ .vertical-line-left-about{
+    border-left: medium solid #fff;
+ }
 
 
  /***CONTACT SECTION OVERWRITE***/
@@ -5458,3 +5472,5 @@ table-bordered>thead>tr>th, .table-bordered>thead>tr>th, table-bordered>tbody>tr
  .vertical-line-left {
  	border-left: medium solid #2C3E50;
  }
+
+
