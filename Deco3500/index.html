@@ -149,6 +149,13 @@
                 For the second day, Iraq and Kurd forces backed by Coalition air strikes and on-the- ground US and UK military advisers successfully fought battles on multiple fronts halting the militants’ momentum. In Tikrit, north of Baghdad Iraqi forces backed by their air force destroyed six ISIS armoured personnel carriers and an unknown number of militants while fierce battles also raged about Ramadi in the country’s north west where a curfew has now been imposed.The Iraqi force of military and police also moved two battalions into the Anbar province of which Ramadi is the capital. An intelligence tip off also led to forces uncovering an arsenal of weapons outside the Tikrit including dozens of home made Improvised Explosive Devices (IEDs) and mortars... <a href="http://www.news.com.au/world/middle-east/alqaeda-wants-muslims-to-join-islamic-state/story-fnh81ifq-1227094687177">Continue reading at News.com.au</a>
         </div>
 
+        <div id="AU" title="Latest News in the Iraq">
+            <h4>NBN Co rolling out FTTN to 200,000 new houses</h4>
+            <p class="newsJustify"><b>WORK is finally underway to get the long awaited, high speed national broadband network to 200,000 new homes and businesses. But only in New South Wales and Queensland.</b>
+                </br>
+                NBN Co this morning announced the details fo the first 140 suburbs to receive their fibre-to-the-node (FTTN) broadband upgrade. FTTN combines high speed fibre optic cables to Telsra’s existing copper lines to potentially deliver super fast broadband. “This means more than 200,000 Australian homes and businesses will able to take advantage of fast and reliable broadband sooner than expected, with these areas previously not earmarked to receive the NBN in the coming 12 months,” NBN Co Chief Customer Officer John Simon said in a statement. In total, 155,000 premises in 99 suburbs throughout Lake Macquarie, the Central Coast and Newcastle are expected to be covered by the NBN. A further 89,500 premises in the Queensland regions of Wide Bay Burnett, Greater Brisbane and Moreton Bay will also get coverage.... <a href="http://www.news.com.au/technology/online/nbn-co-rolling-out-fttn-to-200000-new-houses/story-fnjwncel-1227095962954">Continue reading at News.com.au</a>
+        </div>
+
         <!-- Vector Map -->
         <div id="vmap" style="width: 1280; height: 580px; "></div>
 
@@ -313,7 +320,7 @@
     $("#US").dialog({
         autoOpen: false,
         resizable: false,
-        height: 500,
+        height: 400,
         width: 800,
         modal: true
     });
@@ -326,13 +333,22 @@
         modal: true
     });
 
+    $("#AU").dialog({
+        autoOpen: false,
+        resizable: false,
+        height: 410,
+        width: 800,
+        modal: true
+    });
+
     $("#opener").click(function() {});
     </script>
 
     <script type="text/javascript">
     function lightOn() {
         jQuery('#vmap').vectorMap('set', 'colors', {
-            us: '#FFE70D'
+            us: '#FFE70D',
+            au: '#FFE70D'
         });
     }
 
@@ -371,6 +387,10 @@
                     case "iq":
                         $("#IQ").dialog('open');
                         break;
+                    case "au":
+                        $("#AU").dialog('open');
+                        break;
+
                     default:
                         alert("Try somewhere else!")
                 }
