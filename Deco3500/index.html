@@ -142,6 +142,7 @@
 
         </div>
 
+        <!-- IRAQ NEWS CONTENT -->
         <div id="IQ" title="Latest News in the Iraq">
             <h4>Al-Qaeda wants Muslims to join Islamic State</h4>
             <p class="newsJustify"><b>TERROR group Al-Qaeda has called on Muslims worldwide to join Islamic State in their quest to create a caliphate as the militants continue to be beaten back in both Syria and Iraq.</b>
@@ -149,12 +150,25 @@
                 For the second day, Iraq and Kurd forces backed by Coalition air strikes and on-the- ground US and UK military advisers successfully fought battles on multiple fronts halting the militants’ momentum. In Tikrit, north of Baghdad Iraqi forces backed by their air force destroyed six ISIS armoured personnel carriers and an unknown number of militants while fierce battles also raged about Ramadi in the country’s north west where a curfew has now been imposed.The Iraqi force of military and police also moved two battalions into the Anbar province of which Ramadi is the capital. An intelligence tip off also led to forces uncovering an arsenal of weapons outside the Tikrit including dozens of home made Improvised Explosive Devices (IEDs) and mortars... <a href="http://www.news.com.au/world/middle-east/alqaeda-wants-muslims-to-join-islamic-state/story-fnh81ifq-1227094687177">Continue reading at News.com.au</a>
         </div>
 
+        <!-- AUSTRALIA NEWS CONTENT -->
         <div id="AU" title="Latest News in the Iraq">
             <h4>NBN Co rolling out FTTN to 200,000 new houses</h4>
             <p class="newsJustify"><b>WORK is finally underway to get the long awaited, high speed national broadband network to 200,000 new homes and businesses. But only in New South Wales and Queensland.</b>
                 </br>
                 NBN Co this morning announced the details fo the first 140 suburbs to receive their fibre-to-the-node (FTTN) broadband upgrade. FTTN combines high speed fibre optic cables to Telsra’s existing copper lines to potentially deliver super fast broadband. “This means more than 200,000 Australian homes and businesses will able to take advantage of fast and reliable broadband sooner than expected, with these areas previously not earmarked to receive the NBN in the coming 12 months,” NBN Co Chief Customer Officer John Simon said in a statement. In total, 155,000 premises in 99 suburbs throughout Lake Macquarie, the Central Coast and Newcastle are expected to be covered by the NBN. A further 89,500 premises in the Queensland regions of Wide Bay Burnett, Greater Brisbane and Moreton Bay will also get coverage.... <a href="http://www.news.com.au/technology/online/nbn-co-rolling-out-fttn-to-200000-new-houses/story-fnjwncel-1227095962954">Continue reading at News.com.au</a>
         </div>
+
+        <!-- OTHER COUNTRY CONTENT -->
+        <div id="OTHERS" title="Oopss...">
+            <h4>Please visit <a href="http://www.news.com.au/technology/online/nbn-co-rolling-out-fttn-to-200000-new-houses/story-fnjwncel-1227095962954">News.com.au for more news</a>
+            </h4>
+            <p class="newsJustify"><b>The system is currently processing the latest news for this country...</b>
+                </br>
+                </br>
+                Our sincerest apologies for the inconvenience, the system is currently processing the latest news for the country you selected. Please try other countries that is currently colored.</a>
+        </div>
+
+
 
         <!-- Vector Map -->
         <div id="vmap" style="width: 1280; height: 580px; "></div>
@@ -341,6 +355,14 @@
         modal: true
     });
 
+    $("#OTHERS").dialog({
+        autoOpen: false,
+        resizable: false,
+        height: 300,
+        width: 700,
+        modal: true
+    })
+
     $("#opener").click(function() {});
     </script>
 
@@ -392,7 +414,8 @@
                         break;
 
                     default:
-                        alert("Try somewhere else!")
+                        $("#OTHERS").dialog('open');
+                        break;
                 }
             }
 
